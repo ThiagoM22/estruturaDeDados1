@@ -78,7 +78,23 @@ static void NewMethod()
 
     frutas.Clear();
 
+    // TRABALHANDO COM DICIONARIO (DICIONARY)
+    Dictionary<int, string> carros = new Dictionary<int, string>();
+    //Adicionar dados a um Dicionario
+    carros.Add(5, "Corsa");
+    carros.Add(10, "Fusca");
+    carros.Add(2, "Ford Ka");
 
+    Console.WriteLine();
+    Console.WriteLine();
+    Console.WriteLine();
+
+    Console.WriteLine("Meu Dicionario de Carros");
+    //imprimir um dicionario de dados 
+    foreach (var carro in carros)
+    {
+        Console.WriteLine($"{carro.Key} - {carro.Value}");
+    }
 }
 
 
