@@ -95,6 +95,61 @@ static void NewMethod()
     {
         Console.WriteLine($"{carro.Key} - {carro.Value}");
     }
+    // TRabalhando com fila
+    // criar uma fila (queue)
+
+    Queue<string> FilaBanco = new Queue<string>();
+    FilaBanco.Enqueue("André");
+    FilaBanco.Enqueue("josé");
+    FilaBanco.Enqueue("mazzi");
+    FilaBanco.Enqueue("bruno");
+
+    foreach (var pessoa in FilaBanco)
+    {
+        Console.WriteLine(pessoa);
+    }
+    FilaBanco.Dequeue();
+
+    Console.WriteLine();
+    Console.WriteLine("===============");
+    Console.WriteLine();
+    foreach (var pessoa in FilaBanco)
+    {
+
+        Console.WriteLine(pessoa);
+    }
+
+    // verificar se existe um elemento na fila
+
+    bool achou = FilaBanco.Contains("manoel");
+    if (achou)
+    {
+        Console.WriteLine("A pessoa está na fila");
+    }
+    else
+    {
+        Console.WriteLine("A pessoa NÃO está na Fila");
+    }
+
+    Console.WriteLine();
+    Console.WriteLine("===============");
+    Console.WriteLine();
+
+    // TRABALHANDO COM  PILHA (STACK)
+    Stack<string> Livros = new Stack<string>();
+    //adicionar elementos em uma pilha
+    Livros.Push("Chapeu");
+    Livros.Push("Mazzi o incio");
+    Livros.Push("Mazzi o fim");
+
+    foreach (var Livro in Livros)
+    {
+        Console.WriteLine(Livro);
+    }
+
+    Console.WriteLine();
+    Console.WriteLine("===============");
+    Console.WriteLine();
 }
 
 
